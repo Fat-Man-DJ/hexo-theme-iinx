@@ -1,0 +1,17 @@
+<%- include("_other/layout_1.ejs")%>
+<section class="posts">
+  <% page.posts.each(function (post) { %>
+    <article class="post">
+      <div class="post-title">
+        <h3><a class="post-title-link" href="<%- url_for(post.path) %>"><%= post.title %></a></h3>
+      </div>
+      <div class="post-meta">
+        <span class="post-time"><%- date(post.date, "YYYY-MM-DD") %></span>
+      </div>
+      <%- post.excerpt %>
+      <h5><a class="post-title-link" href="<%- url_for(post.path) %>">Read More>></a></h5>
+
+    </article>
+  <% }) %>
+</section>
+<%- include("_other/layout_2.ejs")%>

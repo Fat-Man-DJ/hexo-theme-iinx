@@ -1,3 +1,6 @@
 <%- include("_other/page_1.ejs")%>
+<h3><%- page.title %></h3>
+<font color="grey" size=2><%- date(page.date, "YYYY-MM-DD") %></font>
+<title><%- config.title %> - <%- page.title %>
 <%- page.content %>
 <%- include("_other/page_2.ejs")%>

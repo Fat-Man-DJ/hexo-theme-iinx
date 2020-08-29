@@ -1,0 +1,8 @@
+<h3>Social Links:</h3>
+<% for (name in theme.social) { %>
+    <a href="<%- url_for(theme.menu[name]) %>"><button type="button" class="btn btn-light"><%= name %></button></a>
+<% } %>
+
+<% if (theme.epedemic_data = true) { %>
+  <iframe src="https://www.lovestu.com/api/project/cnmapyinqing/obj.php" height="500" frameborder="no" border="0" width="100%"> </iframe>
+<% } %>

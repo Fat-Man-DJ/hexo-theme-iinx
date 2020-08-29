@@ -4,9 +4,9 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.0.1">
+    <meta name="baidu-site-verification" content="GAIkTJ5Hye" />
     <meta name="viewport"content="width=device-width，initial-scale=1"/>
     <title><%- config.title %></title>
-
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sticky-footer-navbar/">
     <%- css('css/layout.css') %>
     <!-- Bootstrap core CSS -->
@@ -43,10 +43,12 @@
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <% for (name in theme.menu) { %>
-                <a href="<%- url_for(theme.menu[name]) %>"><%= name %></a><span class="sr-only"></span>
+            <li class="nav-item active">
+                <a class="nav-link" href="<%- url_for(theme.menu[name]) %>"><%= name %></a>
+            </li>
           <% } %>
         </li>
-
+        
       </ul>
     </div>
   </nav>

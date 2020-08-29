@@ -1,0 +1,9 @@
+<%- include("_other/page_1.ejs") %>
+<h3><%- page.title %></h3>
+<% site.tags.each(function (tags) { %>
+  <article class="post">
+    <h3><a class="post-title-link" href="<%- url_for(tags.path) %>"><%= tags.title %></a></h3>
+  </article>
+<% }) %>
+<title><%- config.title %> - <%- page.title %></title>
+<%- include("_other/page_2.ejs") %>

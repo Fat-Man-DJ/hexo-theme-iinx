@@ -1,6 +1,9 @@
 menu:
-  Home,: /
-  About,: /about/
+  Home: /
+  About: /about/
   Log Of Site: /pozhanriji/
 
-ico: 
+social:
+  GitHub: https://github.com/Fat-Man-DJ
+  Bilibili: https://space.bilibili.com/452478240
+ico:

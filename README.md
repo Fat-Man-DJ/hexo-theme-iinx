@@ -1,5 +1,5 @@
 # IINX
-A SimpLE Theme For HEXO,using Bootstrap 4
+A Simple Theme For HEXO,using Bootstrap 4
 
 ## Demo:
 
